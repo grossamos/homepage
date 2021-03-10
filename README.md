@@ -1,27 +1,20 @@
-# HomepageV1
+# Homepage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+## Description
 
-## Development server
+This Project is the source code for my homepage, which can be found at [https://www.amosgross.com](https://www.amosgross.com).
+It is built on Angular, which admittedly is likeley to be quite overkill for the current usecase.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Development
 
-## Code scaffolding
+* To use the development server run `ng serve --open`, this will open up a webpage, which will dynamically update as changes are made
+* To build the project run `ng build --prod`, the files can then be accessed under `/homepage/dist/homepage-v1/`
+* The current deployment is done using Docker, the configuration of which is kept outside of the repo for security purposes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Further Plans
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The Goal of this Project is to provide a presentation of myself.
+In order to better achieve this, the following improvements are currently in planning
+* Improve the Desktop styling
+* Add a bodybuilding section to the main page
+* Add a seperate page to showcase my projects outside of Github
