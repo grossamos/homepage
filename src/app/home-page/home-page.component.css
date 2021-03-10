@@ -1,0 +1,138 @@
+/* For title screen */
+.home_page_title_grid{
+    display: grid;
+    height: 100vh;
+    /* width: 100vw; */
+
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 0.3fr 1fr 1.3fr;
+    grid-template-areas: 
+    ". . . . lamp lamp lamp lamp"
+    ". title title title title title title .";
+}
+
+.home_page_title_mono{
+    font-family: 'B612 Mono', monospace;
+    font-weight: 300;
+    font-size: 48px;
+    margin: 0px;
+    grid-area: title;
+    justify-self: center;
+}
+
+.home_page_lamps{
+    /* grid-area: lamp; */
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-column-end: 9;
+    justify-self: end;
+    
+}
+
+.home_page_background_a{
+    background-color: #EEEEEE;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+.home_page_person{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+
+/* For dev info */
+.home_page_dev_info_links_container{
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    justify-self: center;
+    z-index: 2;
+}
+
+
+.home_page_dev_info_grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 0.5fr 0.3fr 1fr 2fr 0.4fr;
+}
+
+.home_page_dev_info_link_list{
+    grid-area: link;
+    font-size: 30px;
+    list-style: '- ';
+}
+
+.home_page_dev_info_link{
+    color: #E33167;
+    font-family: 'B612 Mono', monospace;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.home_page_plants{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    justify-self: end;
+    align-self: end;
+    z-index: 2;
+}
+
+.home_page_circles{
+    height: 100%;
+    justify-self: center;
+}
+
+.home_page_circles_container{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    /* justify-self: center; */
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+}
+
+@media only screen and (min-device-width : 768px) {
+
+    .home_page_title_mono{
+        font-size: 72px;
+        justify-self: center;
+    }
+    .home_page_lamps{
+        margin-right: 4em;
+    }
+    .home_page_title_grid{
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr 0.6fr 0.3fr 1.3fr;
+        grid-template-areas: 
+        ". . . . lamp lamp lamp lamp"
+        ". title title title title title title .";
+    }
+    .home_page_person{
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 9;
+    }
+    .home_page_dev_info_grid{
+        grid-template-rows: 1fr 0.3fr 1fr 2fr 0.4fr;
+    }
+    .home_page_plants{
+        height: 15em;
+        margin-right: 2%;
+    }
+    .home_page_circles_container{
+        margin-bottom: 2em;
+    }
+}
