@@ -6,7 +6,7 @@
 
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr 0.3fr 1fr 1.3fr;
-    grid-template-areas: 
+    grid-template-areas:
     ". . . . lamp lamp lamp lamp"
     ". title title title title title title .";
 }
@@ -14,10 +14,13 @@
 .home_page_title_mono{
     font-family: 'B612 Mono', monospace;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 45px;
     margin: 0px;
-    grid-area: title;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 8;
     justify-self: center;
+    text-align: center;
 }
 
 .home_page_lamps{
@@ -26,7 +29,7 @@
     grid-column-start: 4;
     grid-column-end: 9;
     justify-self: end;
-    
+
 }
 
 .home_page_background_a{
@@ -38,10 +41,12 @@
 }
 
 .home_page_person{
-    grid-row-start: 3;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  justify-self: start;
+  min-height: 100%;
 }
 
 
@@ -115,7 +120,7 @@
     .home_page_title_grid{
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 1fr 0.6fr 0.3fr 1.3fr;
-        grid-template-areas: 
+        grid-template-areas:
         ". . . . lamp lamp lamp lamp"
         ". title title title title title title .";
     }
