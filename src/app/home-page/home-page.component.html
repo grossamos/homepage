@@ -31,7 +31,10 @@
 
         <ul class="home_page_dev_info_link_list">
             <li *ngFor="let link of exploreLinks">
-                <a href="{{link.link}}" class="home_page_dev_info_link">{{link.title}}</a>
+                <a href="{{link.link}}" class="info_list_link">{{link.title}}</a>
+            </li>
+            <li>
+                <a routerLink='projects' class="info_list_link">Projects</a>
             </li>
         </ul>
     </div>

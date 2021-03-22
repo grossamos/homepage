@@ -41,6 +41,7 @@
 }
 
 .home_page_person{
+  padding-top: 20px;
   grid-row-start: 2;
   grid-row-end: 5;
   grid-column-start: 1;
@@ -74,13 +75,6 @@
     list-style: '- ';
 }
 
-.home_page_dev_info_link{
-    color: #E33167;
-    font-family: 'B612 Mono', monospace;
-    font-weight: 300;
-    font-size: 30px;
-}
-
 .home_page_plants{
     grid-row-start: 3;
     grid-row-end: 6;
@@ -109,6 +103,10 @@
 }
 
 @media only screen and (min-device-width : 768px) {
+
+    .home_page_dev_info_link_list{
+      font-size: 40px;
+    }
 
     .home_page_title_mono{
         font-size: 72px;

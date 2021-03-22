@@ -1,0 +1,29 @@
+.project_main_contents{
+  display: block;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects_title_div{
+  background-color: #EEEEEE;
+  padding-top: 100px;
+  padding-bottom: 32px;
+  margin: 0;
+}
+
+.projects_title{
+  margin: 0;
+  font-family: 'B612 Mono', monospace;
+  font-weight: 300;
+  font-size: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media only screen and (min-device-width : 768px) {
+  .projects_title{
+    font-size: 72px;
+  }
+}
