@@ -1,0 +1,7 @@
+<nav>
+    <ul class="navbar-list">
+    {{ range where .Site.Pages "Type" "page" }}
+        <li>{{ .Title }}</li>
+    {{ end }}
+    </ul>
+</nav>
