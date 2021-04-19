@@ -5,19 +5,27 @@
         <meta name="viewport" content="width=device-width" />
         
         {{ $cssMain := resources.Get "css/main.css" }}
+        {{ $cssCode := resources.Get "css/code.css" }}
         {{ $cssColors := resources.Get "css/colors.css" }}
         {{ $cssHeader := resources.Get "css/header.css" }}
+        {{ $cssFooter := resources.Get "css/footer.css" }}
 
         <link rel="stylesheet" href="{{$cssMain.Permalink}}" type="text/css">
+        <link rel="stylesheet" href="{{$cssCode.Permalink}}" type="text/css">
         <link rel="stylesheet" href="{{$cssColors.Permalink}}" type="text/css">
         <link rel="stylesheet" href="{{$cssHeader.Permalink}}" type="text/css">
+        <link rel="stylesheet" href="{{$cssFooter.Permalink}}" type="text/css">
         <title>{{ .Title }}</title>
     </head>
     <body>
         {{ partial "embedded/fontLoader.html" . }}
 
         {{ partial "headers/header.html" . }}
+        <br/>
+        <div class="main-content">
         {{ block "main" . }}
         {{ end }}
+        {{ partial "headers/footer.html" . }}
+        </div>
     </body>
 </html>

@@ -24,7 +24,7 @@
 }
 
 .navbar-title {
-    color: var(--primary-color); 
+    color: var(--navbar-title-color); 
     font-family: 'Montserrat-Medium';    
     font-size: 20px;
 }

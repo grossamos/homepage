@@ -1,8 +1,9 @@
 <nav class="navbar">
     <div class="navbar-content">
-        <p class="navbar-title navbar-text-item">AMOS GROSS</p>
+        <a href="/"><p class="navbar-title navbar-text-item">AMOS</p></a>
         <ul class="navbar-list navbar-text-item">
-        {{ range where .Site.Pages "Type" "page" }}
+        <li class="navbar-list-item navbar-text-item"><a class="navbar-list-item navbar-text-item" href="https://github.com/grossamos">Github</a></li>
+        {{ range where .Site.Pages "Kind" "section" }}
         <li class="navbar-list-item navbar-text-item"><a class="navbar-list-item navbar-text-item" href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
         </ul>

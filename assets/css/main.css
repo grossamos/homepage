@@ -12,6 +12,10 @@ body, html {
 
 a {
     text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
     color: var(--secondary-color);
 }
 
@@ -24,5 +28,7 @@ a {
     color: var(--foreground-color)
 }
 
+.list-page-item {
 
+}
 
