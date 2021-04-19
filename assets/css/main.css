@@ -1,5 +1,28 @@
+:root {
+    --content-width: 800px;
+    --content-padding: 20px;
+}
+
 body, html {
-    font-family: "Montserrat-Light";
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
     margin: 0px;
     padding: 0px;
 }
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.main-content {
+    max-width: var(--content-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+    color: var(--foreground-color)
+}
+
+
+
