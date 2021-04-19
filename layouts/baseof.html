@@ -3,11 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="/css/main.css" type="text/css">
-        <link rel="stylesheet" href="/css/header.css" type="text/css">
+        
+        {{ $cssMain := resources.Get "css/main.css" }}
+        {{ $cssColors := resources.Get "css/colors.css" }}
+        {{ $cssHeader := resources.Get "css/header.css" }}
+
+        <link rel="stylesheet" href="{{$cssMain.Permalink}}" type="text/css">
+        <link rel="stylesheet" href="{{$cssColors.Permalink}}" type="text/css">
+        <link rel="stylesheet" href="{{$cssHeader.Permalink}}" type="text/css">
         <title>{{ .Title }}</title>
     </head>
     <body>
+        {{ partial "embedded/fontLoader.html" . }}
+
         {{ partial "headers/header.html" . }}
         {{ block "main" . }}
         {{ end }}

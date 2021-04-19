@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #e33167;
+    --secondary-color: #2865ad;
+    
+    --navbar-background-color: #dde3e9;
+    --navbar-menu-text-color: black;
+    --navbar-menu-text-hover-color: var(--secondary-color);
+
+}

@@ -1,7 +1,8 @@
-<nav>
-    <ul class="navbar-list">
+<nav class="navbar">
+    <p class="navbar-title navbar-text-item">AMOS GROSS</p>
+    <ul class="navbar-list navbar-text-item">
     {{ range where .Site.Pages "Type" "page" }}
-        <li>{{ .Title }}</li>
+    <li class="navbar-list-item navbar-text-item"><a class="navbar-list-item navbar-text-item" href="{{ .Permalink }}">{{ .Title }}</a></li>
     {{ end }}
     </ul>
 </nav>

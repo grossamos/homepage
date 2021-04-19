@@ -1,5 +1,5 @@
 ---
-title: Homeeee
+title: Home
 slug: home
 ---
 
