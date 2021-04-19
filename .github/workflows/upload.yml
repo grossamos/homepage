@@ -23,5 +23,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.PASSWORD }}
-          script: ~/Documents/setup/homepage && git pull && sudo bash ./deployment/update.sh
+          script: ~/Downloads/setup/homepage && git pull && sudo bash ./deployment/update.sh
       
