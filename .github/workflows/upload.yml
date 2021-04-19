@@ -21,7 +21,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.PASSWORD }}
           script: cd /home/amos/Documents/setup/homepage && git pull && sudo bash ./deployment/update.sh
       
