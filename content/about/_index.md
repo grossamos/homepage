@@ -7,7 +7,7 @@ slug: about
 
 Hello there, again...
 
-As you may have gathered from my quick introduction on my [homepage](/), I'm a software Developer. 
+As you may have gathered from the quick introduction on my [homepage](/), I'm a software Developer. 
 
 As such, I spend most of my time cruising around Arch linux, developing in C, Java, Vala, Dart and a bunch of other languages and frameworks. If you're ever interested in how cool I am, be sure to take a look at [all of the configs from my Arch setup](https://github.com/grossamos/.dotfiles).
 
