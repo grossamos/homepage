@@ -4,8 +4,8 @@
 }
 
 body, html {
-    font-family: "OpenSans-Regular";
-    font-size: 16px;
+    font-family: "B612Mono";
+    font-size: 18px;
     margin: 0px;
     padding: 0px;
 }
@@ -32,3 +32,8 @@ a:hover {
 
 }
 
+@media (min-width:961px) {
+    body {
+        font-size: 24px;
+    }
+}

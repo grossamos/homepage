@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #003970;
-    --secondary-color: #e33167;
+    --primary-color: #D4134D;
+    --secondary-color: #2865AD;
     
     --navbar-title-color: #ffffff;
-    --navbar-background-color: #003970;
+    --navbar-background-color: #EEEEEE;
     --navbar-menu-text-color: #e2e2e2;
     --navbar-menu-text-hover-color: var(--navbar-title-color);
 

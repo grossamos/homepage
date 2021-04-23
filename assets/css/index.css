@@ -1,0 +1,58 @@
+:root {
+    --content-width: 800px;
+    --content-padding: 20px;
+}
+
+.index-title-div {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 70vh;
+    background-color: var(--navbar-background-color); 
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-title-text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    font-size: 48px;
+}
+
+.index-content {
+    max-width: var(--content-width);
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+}
+
+.index-lamps {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+}
+
+.index-person {
+    margin-top: calc(100vh - 450px);
+    z-index: 20;
+    position: relative;
+}
+
+.index-plants {
+    position: absolute;
+    right: 0px;
+}
+
+@media (min-width:961px) {
+    .index-title-text {
+        margin-top: 20%;
+        font-size: 72px;
+    }
+}

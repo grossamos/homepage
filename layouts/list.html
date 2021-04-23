@@ -1,3 +1,34 @@
-{{ define "main" }}
-{{ .Content }}
-{{ end }}
+{{ $cssIndex := resources.Get "css/index.css" }}
+{{ $cssMain := resources.Get "css/main.css" }}
+{{ $cssCode := resources.Get "css/code.css" }}
+{{ $cssColors := resources.Get "css/colors.css" }}
+{{ $imgLamp := resources.Get "images/lamps.svg" }}
+{{ $imgPerson := resources.Get "images/person.svg" }}
+{{ $imgPlants := resources.Get "images/plants.svg" }}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{{ .Site.Title }}</title>
+        <link rel="stylesheet" href="{{ $cssIndex.Permalink }}" type="text/css">
+        <link rel="stylesheet" href="{{ $cssCode.Permalink }}" type="text/css">
+        <link rel="stylesheet" href="{{ $cssColors.Permalink }}" type="text/css">
+        <link rel="stylesheet" href="{{ $cssMain.Permalink }}" type="text/css">
+    </head>
+    <body>
+        {{ partial "embedded/fontLoader.html" }}
+        <img src="{{ $imgLamp.Permalink }}" alt="Lamp" class="index-lamps"/>
+        <img src="{{ $imgPerson.Permalink }}" alt="Person" class="index-person"/>
+        <div class="index-title-div">
+            <h1 class="index-title-text">{{ .Site.Title }}</h1> 
+        </div>
+
+        <div class="index-content">
+            {{ .Content }}
+        </div>
+
+        <img src="{{ $imgPlants.Permalink }}" alt="Lamp" class="index-plants"/>
+    </body>
+</html>

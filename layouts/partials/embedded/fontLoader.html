@@ -6,6 +6,7 @@
 {{ $fontOpenSansRegular := resources.Get "fonts/OpenSans/OpenSans-Regular.ttf" }}
 {{ $fontOpenSansLight := resources.Get "fonts/OpenSans/OpenSans-Light.ttf" }}
 {{ $fontOpenSansBold := resources.Get "fonts/OpenSans/OpenSans-Bold.ttf" }}
+{{ $fontMono := resources.Get "fonts/B612Mono/B612Mono-Regular.ttf" }}
 
 @font-face {
     font-family: "Montserrat-Light";
@@ -35,6 +36,12 @@
 @font-face {
     font-family: "OpenSans-Bold";
     src: url("{{ $fontOpenSansBold.Permalink }}")
+}
+
+
+@font-face {
+    font-family: "B612Mono";
+    src: url("{{ $fontMono.Permalink }}")
 }
 
 </style>
