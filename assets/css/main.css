@@ -19,6 +19,8 @@ a:hover {
     color: var(--secondary-color);
 }
 
+
+
 .main-content {
     max-width: var(--content-width);
     margin-left: auto;
@@ -33,7 +35,4 @@ a:hover {
 }
 
 @media (min-width:961px) {
-    body {
-        font-size: 24px;
-    }
 }

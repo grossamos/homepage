@@ -1,5 +1,6 @@
 {{ $cssIndex := resources.Get "css/index.css" }}
 {{ $cssMain := resources.Get "css/main.css" }}
+{{ $cssHeader := resources.Get "css/header.css" }}
 {{ $cssCode := resources.Get "css/code.css" }}
 {{ $cssColors := resources.Get "css/colors.css" }}
 {{ $imgLamp := resources.Get "images/lamps.svg" }}
@@ -16,13 +17,22 @@
         <link rel="stylesheet" href="{{ $cssCode.Permalink }}" type="text/css">
         <link rel="stylesheet" href="{{ $cssColors.Permalink }}" type="text/css">
         <link rel="stylesheet" href="{{ $cssMain.Permalink }}" type="text/css">
+        <link rel="stylesheet" href="{{ $cssHeader.Permalink }}" type="text/css">
     </head>
     <body>
         {{ partial "embedded/fontLoader.html" }}
         <img src="{{ $imgLamp.Permalink }}" alt="Lamp" class="index-lamps"/>
         <img src="{{ $imgPerson.Permalink }}" alt="Person" class="index-person"/>
         <div class="index-title-div">
-            <h1 class="index-title-text">{{ .Site.Title }}</h1> 
+            <p class="index-title-text">{{ .Site.Title }}</p> 
+            <style>
+                @media (min-width:961px){
+                    .navbar-list-item {
+                        font-size: 24px;
+                    }
+                }
+            </style>
+            {{ partial "headers/menu.html" }}
         </div>
 
         <div class="index-content">
