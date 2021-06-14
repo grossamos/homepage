@@ -1,10 +1,10 @@
 ---
-title: "Developing Linux Kenel Modules in Qemu"
+title: "Developing Linux Kernel Modules in Qemu"
 date: 2021-06-13T20:34:54+02:00
 draft: false
 ---
 
-# Developing Linux Kenel Modules in Qemu
+# Developing Linux Kernel Modules in Qemu
 ## High level overview
 #### Why Qemu?
 Wrighting, loading and compiling kernel modules on a running system is fairly straight forward, it only really requires running two commands after all. 
