@@ -354,7 +354,7 @@ Congrats, you can now publish applications in kubernetes and have other people a
 
 ## Registry
 From time to time however, it might get boring to just publish other peoples apps. We want to be able to publish our own.
-This is where hosting a docker registry comes into play. 
+This is where hosting a private docker registry comes into play. 
 Obviously building or importing images on your remote machine is also an option, but it's less clean.
 
 First things first, you have to generate a password for your registry:
