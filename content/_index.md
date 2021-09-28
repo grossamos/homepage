@@ -12,3 +12,5 @@ I'm virtually in love with the [GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu
 This [website]() was originally planned as a place for me to showcase my work and passions, however knowing myself it'll probably just end up as a conglomeration of half baked projects and articles.
 
 So yeah, sit back, enjoy and don't forget to [greet General Kenobi](https://youtu.be/rEq1Z0bjdwc) on your way in next time.
+
+P.S. I recently created an app, go [download](https://play.google.com/store/apps/details?id=com.amosgross.weight_track_app) it from the play store!
