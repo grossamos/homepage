@@ -1,0 +1,15 @@
+{
+  "name": "homepage",
+  "version": "0.3.0",
+  "description": "A personal homepage for Amos Gross",
+  "main": "src/index.ts",
+  "scripts": {
+    "watch": "tsc --watch",
+    "init": "mkdir dist && ln -s ./src/index.css ./dist/index.css && ln -s ./src/index.html ./dist/index.html"
+  },
+  "author": "",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,8 +1,0 @@
-version: "3.8"
-
-services:
-  homepage:
-    image: homepage
-    build: ./
-    ports:
-      - "7080:80"
