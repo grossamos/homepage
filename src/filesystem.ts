@@ -1,3 +1,4 @@
+
 let filesystem: FileSystemType = {
   "Banner.txt": generateBanner(),
   "Socials": {
@@ -18,12 +19,21 @@ let filesystem: FileSystemType = {
                      "You can find more information on [Github](https://github.com/grossamos/throwscape)\n",
   }
 }
+/*
+█▀█ █▀█▀█ █▀█ █▀▀  █▀▀ █▀█ █▀█ █▀▀ █▀▀
+█▀█ █ ▀ █ █ █ ▀▀█  █ █ █▀▄ █ █ ▀▀█ ▀▀█
+▀ ▀ ▀   ▀ ▀▀▀ ▀▀▀  ▀▀▀ ▀ ▀ ▀▀▀ ▀▀▀ ▀▀▀
+*/
 type FileSystemType = {
     [key: string]: string | FileSystemType;
 };;
 
 let current_directory = ['~'];
-const errortext_no_directory_with_that_name = "cannot access that file: No such file or directory"
+
+function get_err_no_directory_with_name(file: string): string {
+  const errortext_no_directory_with_that_name = "cannot access " + file+ ": No such file or directory";
+  return errortext_no_directory_with_that_name
+}
 
 function getPrompt() {
   const prompt_text = `<span class="green">amos@website</span><span class="blue"> ${current_directory[current_directory.length - 1]} $ </span>`;
@@ -65,8 +75,7 @@ function cdCommand(inputValue: string): string {
   for (let i = 1; i < cd.length; i += 1) {
     directory = directory[cd[i]] as FileSystemType;
     if (typeof directory === 'undefined') {
-      console.log(cd);
-      return "cd: " + errortext_no_directory_with_that_name;
+      return "cd: " + get_err_no_directory_with_name(inputValue)
     } else if (typeof directory === 'string') {
       return "cd: not a directory: " + cd[i];
     }
@@ -92,15 +101,18 @@ function lsCommand(inputValue: string): string  {
   let directory = filesystem;
   let cd = current_directory;
 
-  const match = inputValue.match(/^.*?\s*(\S+)$/);
-  if (match) {
-    cd = cd.concat(match[1].toString().split('/'));
+  const pattern = /(-\w+) (.*)/i;
+  const match = inputValue.match(pattern);
+  let filename = "~";
+  if (match && match[2]) {
+    filename = match[2];
+    cd = cd.concat(match[2].toString().split('/'));
   }
 
   for (let i = 1; i < cd.length; i += 1) {
     directory = directory[cd[i]] as FileSystemType;
     if (typeof directory === 'undefined') {
-      output = "ls: " + errortext_no_directory_with_that_name;
+      output = "ls: " + get_err_no_directory_with_name(filename);
       return output;
     } else if (typeof directory === 'string') {
       output = prefix + cd[cd.length - 1];
