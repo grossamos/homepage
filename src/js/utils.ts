@@ -30,6 +30,7 @@ function generateBanner() {
   let greeting = "Welcome to the website of\n";
   let fontSize = 12 * 1; // convert pt to pixels (assuming the density browsers default to)
   let availableCharacters = Math.ceil(historyElement.clientWidth / fontSize);
+  console.log(availableCharacters);
 
   if (availableCharacters >= 45) {
     greeting +=

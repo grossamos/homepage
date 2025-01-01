@@ -1,6 +1,18 @@
 
 let filesystem: FileSystemType = {
   "Banner.txt": generateBanner(),
+  "PGP.txt": `-----BEGIN PGP PUBLIC KEY BLOCK-----
+mDMEZ3VRmBYJKwYBBAHaRw8BAQdAexoQQs6PmYvINHJuHExxnRbpT4mkzaXIHYxJ
+gngqHEq0IEFtb3MgR3Jvc3MgPGVtYWlsQGFtb3Nncm9zcy5jb20+iJkEExYKAEEW
+IQQ9u444qi5/WxB/aUppsLWMiiansQUCZ3VRmAIbAwUJA8JnAAULCQgHAgIiAgYV
+CgkICwIEFgIDAQIeBwIXgAAKCRBpsLWMiiansVXKAQC2iu3n8pXWQICYILDI6FB/
+l/Vuo15a2qg8KvAVZYnP5AD+J/47zyQ/fGCOJXub/cDTx6q/vm4bBA3yZjruRmfV
+EQe4OARndVGYEgorBgEEAZdVAQUBAQdAr71I7B2W9YzWjFLmTVmgU2e8xsOAZZH6
+yq66IxbnCkgDAQgHiH4EGBYKACYWIQQ9u444qi5/WxB/aUppsLWMiiansQUCZ3VR
+mAIbDAUJA8JnAAAKCRBpsLWMiianscOGAQDQ2b/Q+49eibNYYPpAPEbbR2uP7dVe
+NCQR6nvgIzddCwEAh4r+7/c2zbK/UF0Li99gTQjEK4GXIM+zsscA/BG/Ywo=
+=J2B/
+-----END PGP PUBLIC KEY BLOCK-----`,
   "Socials": {
     "Linkedin.txt" : "https://www.linkedin.com/in/amos-gross/",
     "Github.txt": "https://github.com/grossamos/"
